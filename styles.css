@@ -11,13 +11,17 @@ h1{
 	text-align: center;
 }
 
-.chicken, .beef, .sushi {
+/*.chicken, .beef, .sushi {
+background-color: cyan;
+}*/
+
+
+.para {
 background-color: grey;
 border-width: 2px;
 border-color: #FFFF;
 border-style: solid;
-padding: 0px,5px,5px,5px;
-margin: 5px;
+margin: 10px;
 }
 
 .item {
@@ -28,6 +32,7 @@ border-color: #FFFF;
 border-style: solid;
 width: 150px;
 text-align: center;
+font-weight: bold;
 font-size: 125%;
 position: relative;
 top: 0px;
@@ -35,22 +40,31 @@ right: 0px;
 float: right;
 }
 
-.chicken > .item {
-	background-color: pink;
+p {
+padding-left: 10px;
+padding-right: 10px;
 }
 
-.beef > .item {
-	background-color: red;
+.chicken .item {
+	background-color: #EBB0BA;
 }
 
-.sushi > .item {
-	background-color: yellow;
+.beef .item {
+	background-color: #CC2424;
+}
+
+.sushi .item {
+	background-color: #E39630;
+}
+
+.row {
+	width: 100%;
 }
 
 /********** Desktop devices **********/
 @media (min-width: 992px) {
 .chicken, .beef, .sushi{
-width: 31.33%;
+width: 33.33%;
 float: left;
 }
 }
@@ -59,12 +73,12 @@ float: left;
 /********** Tablet devices **********/
 @media (min-width: 768px) and (max-width: 991px) {
 .chicken, .beef{
-width: 48%;
+width: 50%;
 float: left;
 }
 
 .sushi {
-width: 98;
+width: 100%;
 float: left;
 }
 }
@@ -73,8 +87,7 @@ float: left;
 /********** Mobile devices **********/
 @media (max-width: 767px) {
 .chicken, .beef, .sushi {
-width: 98%;
+width: 100%;
 float: left;
 }
 }
-
